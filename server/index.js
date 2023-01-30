@@ -1,3 +1,4 @@
+import express from 'express';
 // express 모듈을 가져옴 -> 새로운 express 앱을 만듦
 const express = require('express')
 const app = express()
