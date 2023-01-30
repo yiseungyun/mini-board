@@ -112,8 +112,8 @@
 
 /* registerPage design */
 .registerForm { 
-    align-items: center;
-    margin-top: 40%;
+    display: inline-block;
+    text-align: center;
     display: flex;
     flex-direction: column;
 }
