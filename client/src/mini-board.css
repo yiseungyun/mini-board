@@ -1,0 +1,139 @@
+/* LandingPage design */
+.homepageName {
+    text-align: center;
+    font-size: 300%;
+    padding-top: 3%;
+}
+
+.topMenu {
+    text-align: end;
+    padding-right: 3%;
+    padding-top: 1%;
+}
+
+#boardBtn, #logoutBtn, #loginBtn, #registerBtn {
+    font-size: 110%;
+    padding: 3px;
+    font-weight: 600;
+    cursor: pointer; /* 버튼 올리면 손모양으로 바뀌게 설정 */
+}
+
+/* LoginPage design */
+.loginPageForm { 
+    position: relative; top: 40%; left: 50%; transform: translate(-50%, -50%); 
+}
+
+.loginForm {
+    text-align: center;
+}
+
+#emailBox, #passwordBox { 
+    margin: 0.8%;
+    padding: 1%;
+}
+
+#emailBox::placeholder, #passwordBox::placeholder {
+    font-size: 115%;
+}
+
+.btnForm {
+    text-align: end;
+    padding-right: 2%;
+    cursor: pointer;
+}
+
+#loginBtn, #backBtn {
+    padding: 3px;
+    font-weight: 600;
+    font-size: 110%;
+    cursor: pointer;
+}
+
+/* BoardPage design */
+.boardName1 {
+    text-align: center;
+    font-size: 200%;
+    padding-top: 1%;
+}
+
+.postList {
+    text-align: center;
+}
+
+.board1topMenu {
+    font-size: 110%;
+    text-align: end;
+    padding-right: 3%;
+    padding-top: 1%;
+}
+
+#homeBtn, #postBtn {
+    padding: 3px;
+    font-weight: 600;
+    cursor: pointer; /* 버튼 올리면 손모양으로 바뀌게 설정 */
+}
+
+.deleteBtn {
+    padding: 3px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* postingPage Design */
+.postingForm {
+    text-align: center;
+}
+
+#registerCancelBtn, #registerPostBtn {
+    padding: 3px;
+    font-weight: 600;
+    cursor: pointer; /* 버튼 올리면 손모양으로 바뀌게 설정 */
+}
+
+#titleBox {  
+    margin: 0.8%;
+    padding: 1%;
+    width: 70%;
+    font-size: large;
+}
+
+#contentBox {
+    margin: 0.8%;
+    padding: 1%;
+    width: 70%;
+    height: 120px;
+    resize: none;
+    font-size: large;
+}
+
+#emailBox::placeholder, #passwordBox::placeholder {
+    font-size: 115%;
+}
+
+/* registerPage design */
+.registerForm { 
+    align-items: center;
+    margin-top: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.registerBtnForm {
+    text-align: end;
+}
+
+#registerSubmitBtn, #registerBackBtn {
+    padding: 3px;
+    font-weight: 600;
+    font-size: 110%;
+    cursor: pointer;
+}
+
+#r_emailBox, #r_nameBox, #r_passwordBox, #r_confirmBox {
+    margin: 0.8%;
+    padding: 1%;
+}
+
+#r_emailBox::placeholder, #r_nameBox::placeholder, #r_passwordBox::placeholder, #r_confirmBox::placeholder {
+    font-size: 115%;
+}
