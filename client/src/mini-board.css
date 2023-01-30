@@ -111,11 +111,12 @@
 }
 
 /* registerPage design */
+.registerPageForm {
+    margin-top: 30%;
+}
+
 .registerForm { 
-    display: inline-block;
     text-align: center;
-    display: flex;
-    flex-direction: column;
 }
 
 .registerBtnForm {
@@ -132,6 +133,7 @@
 #r_emailBox, #r_nameBox, #r_passwordBox, #r_confirmBox {
     margin: 0.8%;
     padding: 1%;
+    width: 35%;
 }
 
 #r_emailBox::placeholder, #r_nameBox::placeholder, #r_passwordBox::placeholder, #r_confirmBox::placeholder {

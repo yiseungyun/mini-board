@@ -9,10 +9,10 @@ function LandingPage() {
     const navigate = useNavigate();
     const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem("userName"))
     // landingpage 들어오자마자 실행
-    useEffect(() => {
+    /*useEffect(() => {
         axios.get('/api/hello')
         .then(response => console.log(response.data))
-    }, [])
+    }, [])*/
 
     const onClickHandler = () => {
       axios.get('/api/users/logout')
@@ -23,6 +23,7 @@ function LandingPage() {
           navigate('/')
         } else {
           alert('로그아웃하는데 실패했습니다.')
+          console.log(response)
         }
       })
     }
@@ -33,7 +34,7 @@ function LandingPage() {
       }}>
         <div>
           <div className='topMenu'>
-            {isLoggedIn && <span id='boardBtn' onClick={()=>navigate('/Board')}>게시판</span>}          
+            {isLoggedIn && <span id='boardBtn' onClick={()=>navigate('/board')}>게시판</span>}          
             {isLoggedIn && <span id='logoutBtn' onClick={onClickHandler}>로그아웃</span>}
           </div>
           <div className='topMenu'>

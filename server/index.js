@@ -11,10 +11,10 @@ mongoose.connect(config.mongoURI)
 
 
 // 루트 디렉토리에 'Hello World!'를 출력하게 함
-app.get('/', (req, res) => res.send('Hello World!'))
+/*app.get('/', (req, res) => res.send('Hello World!'))
 app.get('/api/hello', (req, res) => {
     res.send("안녕하세요!") // front에 전달
-})
+})*/
 
 // 회원가입
 const { User } = require("./models/User");

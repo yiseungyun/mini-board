@@ -50,11 +50,11 @@ function RegisterPage() {
 
   return (
     <div>
-      <form>
+      <form className='registerPageForm'>
         <div className='registerForm'>
-          <input id='r_emailBox' type="email" placeholder='Email' value={Email} onChange={onEmailHandler}/>
-          <input id='r_nameBox' type="text" placeholder='Name' value={Name} onChange={onNameHandler}/>
-          <input id='r_passwordBox' type="password" placeholder='Password' value={Password} onChange={onPasswordHandler}/>
+          <input id='r_emailBox' type="email" placeholder='Email' value={Email} onChange={onEmailHandler}/><br/>
+          <input id='r_nameBox' type="text" placeholder='Name' value={Name} onChange={onNameHandler}/><br/>
+          <input id='r_passwordBox' type="password" placeholder='Password' value={Password} onChange={onPasswordHandler}/><br/>
           <input id='r_confirmBox' type="password" placeholder='Confirm Password' value={ConfirmPassword} onChange={onConfirmPasswordHandler}/>
         </div>
         <br/>
