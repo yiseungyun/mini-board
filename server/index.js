@@ -1,10 +1,10 @@
-import express from './express.js';
+import express from 'express';
 // express 모듈을 가져옴 -> 새로운 express 앱을 만듦
 //const express = require('express')
 const app = express()
-const config = require('./config/key')
+const config = require('./config/key.js')
 const cookieParser = require('cookie-parser'); 
-const { auth } = require('./middleware/auth');
+const { auth } = require('./middleware/auth.js');
 // mongoose를 이용해 애플리케이션과 몽고db 연결
 const mongoose = require('mongoose')
 mongoose.connect(config.mongoURI)
@@ -18,8 +18,8 @@ app.get('/api/hello', (req, res) => {
 })*/
 
 // 회원가입
-const { User } = require("./models/User");
-const { Post } = require("./models/Post");
+const { User } = require("./models/User.js");
+const { Post } = require("./models/Post.js");
 const bodyParser = require('body-parser');
 
 // application/x-www-form-urlencoded 분석해서 가져옴
