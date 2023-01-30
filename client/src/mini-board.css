@@ -40,6 +40,7 @@
     text-align: end;
     padding-right: 2%;
     cursor: pointer;
+    text-align: center;
 }
 
 #loginBtn, #backBtn {
@@ -120,7 +121,7 @@
 }
 
 .registerBtnForm {
-    text-align: end;
+    text-align: center;
 }
 
 #registerSubmitBtn, #registerBackBtn {
