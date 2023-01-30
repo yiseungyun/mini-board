@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "javascript.suggestionActions.enabled": false,
   "scripts": {
     "start": "node server/index.js",
     "backend": "node server/index.js",
